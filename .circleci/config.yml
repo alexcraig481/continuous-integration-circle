@@ -2,8 +2,7 @@ version: 2.1
 executors:
   ci-executor:
     docker:
-      - image: REPLACE-ME-WITH-DOCKER-IMAGE
-jobs:
+      - image: githubtraining/ci-custom:latest
   build:
     executor: ci-executor
     steps:
